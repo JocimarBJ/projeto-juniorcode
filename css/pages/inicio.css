@@ -1,0 +1,79 @@
+#imagem-fundo{
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    background-image: url('/images/background-oculos.png');
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+#imagem-fundo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/background-degrade.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: darken; 
+    z-index: -1; 
+}
+
+/* --------------------------------------------------------
+MAIN - TEXTO PRINCIPAL DO MEIO DA TELA
+-------------------------------------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+}
+
+#texto-inicio-bemvindo{
+    font-size: 42px;
+    font-weight: 700;
+}
+#texto-inicio-juniorcode{
+    font-size: 84px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#texto-inicio-juniorcode span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    animation-name: juniorcode;
+    animation-duration: 2s;  /* Duração mais rápida */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#texto-inicio-descricao{
+    font-size: 22px;
+    max-width: 495px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* --------------------------------------------------------
+ARTICLE - FRASE "CODGIO É POESIA PARA A MENTE"
+-------------------------------------------------------- */
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+article p{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,120 @@
+@import url('../base/variables.css');
+@import url('../base/global.css');
+
+body{
+    background-color: rgb(39, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1e0000, #650000);
+}
+
+
+
+.login-box h1{
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.user-avatar img{
+    max-width: 70%;
+    max-height: 70%;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+
+.extras{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    width: 100%;
+    gap: 3.5rem;
+    margin: 1rem 0px;
+    
+}
+
+.extras a{
+    font-size:0.9rem;
+    font-weight: bold;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;                  /* Espaço entre a caixa e o texto */
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    opacity: 0;                  /* Deixa o input invisível */
+    position: absolute;          /* Retira o input do fluxo visual */
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.custom-checkbox .checkbox-box {
+    width: 1rem;                 /* Tamanho da caixa */
+    height: 1rem;
+    border: 2px solid #0B0B0B;   /* Cor da borda */
+    border-radius: 4px;          /* Bordas arredondadas */
+    background-color: transparent; /* Fundo da caixa */
+    position: relative;          /* Necessário para o pseudo-elemento */
+    transition: all 0.3s ease;   /* Transição suave */
+}
+
+/* Adiciona o "X" e faz ele desaparecer inicialmente */
+.custom-checkbox .checkbox-box::before,
+.custom-checkbox .checkbox-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.8rem;
+    height: 0.15rem;
+    background-color: #0B0B0B;     /* Cor do "X" */
+    transform-origin: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0;                  /* Começa invisível */
+}
+
+/* Posição das partes do X */
+.custom-checkbox .checkbox-box::before {
+    transform: translate(-50%, -50%) rotate(45deg); /* Primeira diagonal */
+}
+
+.custom-checkbox .checkbox-box::after {
+    transform: translate(-50%, -50%) rotate(-45deg); /* Segunda diagonal */
+}
+
+/* Quando o input é marcado, muda o fundo da caixa e o "X" aparece */
+.custom-checkbox input:checked + .checkbox-box {
+    background-color: #E5434B;      /* Cor de fundo quando marcado */
+    border-color: #0B0B0B;          /* Cor da borda ao marcar */
+}
+
+/* Mostra o "X" ao marcar */
+.custom-checkbox input:checked + .checkbox-box::before,
+.custom-checkbox input:checked + .checkbox-box::after {
+    opacity: 1;                     /* Torna o X visível */
+}
+
+
+.register-link a:hover, .extras a:hover{
+    font-weight: bold;
+    color: #FF6363;
+}
+
+.register-link{
+    display: flex;
+    font-size: 80%;
+    gap: 0.3rem;
+}
+
+.register-link a{
+    color: #0B0B0B;
+    font-weight: bold;
+}
