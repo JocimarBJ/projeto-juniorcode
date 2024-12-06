@@ -25,7 +25,7 @@
 
 |🚀 Estrutura do Projeto| ®️ Logo Marca| 🛠️ Tecnologias Usadas | ©️ **Autoria**|
 |-|-|-|-|
-|✅HTML<br>✅CSS<br>✅JavaScript|<img src="" width="150" height="150"/>| [FIGMA](https://www.figma.com/design/y6gaqaSXAa5V1601RFjfcO/Meu-Portf%C3%B3lio?node-id=0-1&t=Y8rbmZO59QhSylsO-1)| [Jocimar Borges Júnior](https://github.com/JocimarBJ)|
+|✅HTML<br>✅CSS<br>✅JavaScript|<img src="https://github.com/user-attachments/assets/d075a2e9-238e-4dea-8e92-9a1cf302216e" width="150" height="150"/>| [FIGMA](https://www.figma.com/design/y6gaqaSXAa5V1601RFjfcO/Meu-Portf%C3%B3lio?node-id=0-1&t=Y8rbmZO59QhSylsO-1)| [Jocimar Borges Júnior](https://github.com/JocimarBJ)|
 
 
 |🌍 **ODS Que Pretendo Contribuir**
