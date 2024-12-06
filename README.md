@@ -40,6 +40,6 @@
 
 | Tela Inicial |
 |-|
-|<img src="https://github.com/user-attachments/assets/06cd60d8-eeb2-47d2-8261-5be0cd3f278c" width="1920" height="500"/>|
+|<img src="https://github.com/user-attachments/assets/06cd60d8-eeb2-47d2-8261-5be0cd3f278c"/>|
 
 </div>
