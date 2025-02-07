@@ -1,0 +1,51 @@
+
+
+/* <====== ANIMACAO JUNIORCODE - VERMELHO =====> */
+
+#texto-inicio-juniorcode span:nth-of-type(1) {
+    animation-delay: 0.25s;  /* Delay menor entre letras */
+}
+#texto-inicio-juniorcode span:nth-of-type(2) {
+    animation-delay: 0.30s;  /* Delay menor entre letras */
+}
+#texto-inicio-juniorcode span:nth-of-type(3) {
+    animation-delay: 0.35s;
+}
+#texto-inicio-juniorcode span:nth-of-type(4) {
+    animation-delay: 0.40s;
+}
+#texto-inicio-juniorcode span:nth-of-type(5) {
+    animation-delay: 0.45s;
+}
+#texto-inicio-juniorcode span:nth-of-type(6){
+    animation-delay: 0.50s;
+}
+#texto-inicio-juniorcode span:nth-of-type(7){
+    animation-delay: 0.55s;
+}
+#texto-inicio-juniorcode span:nth-of-type(8){
+    animation-delay: 0.60s;
+}
+#texto-inicio-juniorcode span:nth-of-type(9){
+    animation-delay: 0.65s;
+}
+#texto-inicio-juniorcode span:nth-of-type(10){
+    animation-delay: 0.70s;
+}
+#texto-inicio-juniorcode span:nth-of-type(11){
+    animation-delay: 0.75s;
+}
+#texto-inicio-juniorcode span:nth-of-type(12){
+    animation-delay: 0.80s;
+}
+
+@keyframes juniorcode {
+    20%, 60% { /* As letras ficam vermelhas por 60% da animação */
+        color: #E5434B;
+        text-shadow: 0 0 100px #E5434B, 0 0 5px #ffffff, 0 0 10px #ea99b1;
+    }
+    60% { /* A letra volta à cor original no final */
+        color: #e0e0e0;
+        text-shadow: none;
+    }
+}

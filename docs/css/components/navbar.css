@@ -1,0 +1,65 @@
+/* --------------------------------------------------------
+NAVBAR - BARRA DE NAVEGAÇÃO PRINCIPAL
+-------------------------------------------------------- */
+nav{
+    display: block;
+    background-color: rgba(16, 1, 1, 0.5);
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 40px;
+    font-weight: 700;
+    margin: 0px 1.5rem 0px 1.5rem;
+} 
+
+#navbar-left{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 85px;
+}
+
+#navbar-left a{
+    display: block;
+    position: relative;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    transition: color 0.5s ease;
+}
+
+#navbar-left a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #FF6363;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#navbar-left a:hover {
+    color: #FF6363;
+}
+
+#navbar-left a:hover::after {
+    width: 100%;
+}
+
+#navbar-right{
+    display: flex;
+    gap: 40px;
+}
+
+#navbar-right img {
+    display: block;
+    max-width: 20px;
+    height: auto;
+}

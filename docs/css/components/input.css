@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(var(--corPrincipal), 0.18);
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+    justify-content: center;
+    border-radius: 0 40px 40px 40px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 25px 0px;
+    transition: border-color 0.5s ease;
+    border: 2px solid #0B0B0B;
+    border-radius: 5px;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+}
+
+.input-group label{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+}
+
+.input-group:focus-within {
+    border-color: #E5434B;
+}
+.input-group input{
+    flex: 1; /* O input vai preencher toda a largura da div */
+    background-color: transparent;
+    outline: none;
+    border: none; 
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    width: 100%; 
+    height: 100%;
+    box-sizing: border-box;
+    color: #e0e0e0;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease; 
+}
+
+input:focus::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+input:-webkit-autofill {
+    background-color: transparent !important; /* Fundo transparente */
+    -webkit-background-clip: text; /* Clipa o fundo */
+    -webkit-text-fill-color: #e0e0e0 !important; /* Cor do texto */
+}
+
+.input-group img {
+    max-width: 100%;  
+    max-height: 100%;
+    border-radius: 3px 0px 0px 3px;
+}
+
+/* BOTÃO DE ENTRAR */
+.btn{
+    background-color: #0B0B0B;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.5);
+    color: #E5434B;
+    font-weight: bold;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #E5434B;
+    color: #0B0B0B;
+}

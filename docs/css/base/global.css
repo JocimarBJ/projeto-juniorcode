@@ -1,0 +1,50 @@
+/*(Estilos globais compartilhados entre páginas)*/
+
+*{
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #e0e0e0;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+/*-------- Estilização da Barra de Rolagem -------*/
+::-webkit-scrollbar {
+    width: 10px; /* Largura vertical */
+    height: 10px; /* Altura horizontal */
+}
+
+/* Polegar da barra */
+::-webkit-scrollbar-thumb {
+    background: #e5434b97; /* Cor do polegar */
+    border: black solid 3px;
+    box-shadow: inset 0 0 0 0 #1e0000;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Trilho da barra */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0); /* Cor do trilho */
+    border-radius: 10px;
+}
+
+/* Quando passar o mouse sobre o polegar */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff6f6f; /* Cor quando o mouse está sobre */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pages/admin.css">
+    <link rel="stylesheet" href="../css/base/global.css">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <title>Admin</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html""><span class="material-symbols-outlined">arrow_back_ios</span>Voltar</a>
+        </nav>
+    </header>
+    <main>
+        <div class="admin-box">
+            <h1>Admin</h1>
+            <form id="userForm">
+                <label for="username">Nome do Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="ex: fulano21" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="ex: fulanodetal@gmail.com" aria-label="Digite o email do usuário" aria-placeholder="Digite o email do usuário" required>
+                <button type="submit">Cadastrar</button>
+                <button type="button" id="clearFields">Limpar Campos</button>
+            </form>
+        </div>
+        <div id="list">
+            <div class="options">
+                <input type="text" id="searchBox" placeholder="Pesquisar...">
+                <button id="deleteAll"><img src="../images/admin/trash-icon.svg" alt="Lixo icone">Excluir Todos</button>
+            </div>
+            <ul id="userList">
+                
+            </ul>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+</html>
